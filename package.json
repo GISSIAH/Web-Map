@@ -1,0 +1,22 @@
+{
+  "name": "nutt",
+  "version": "1.0.0",
+  "description": "web map",
+  "main": "app.js",
+  "scripts": {
+    "build": "browserify index.js -o bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "GISSIAH",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^16.5.0",
+    "esri-leaflet": "^2.3.3",
+    "esri-leaflet-geocoder": "^2.3.2",
+    "express": "^4.17.1",
+    "jquery": "^3.4.1",
+    "leaflet": "^1.6.0",
+    "mongoose": "^5.9.5",
+    "mongoose-geojson-schema": "^2.1.5"
+  }
+}

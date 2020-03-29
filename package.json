@@ -16,7 +16,7 @@
     "express": "^4.17.1",
     "jquery": "^3.4.1",
     "leaflet": "^1.6.0",
-    "mongoose": "^5.9.5",
-    "mongoose-geojson-schema": "^2.1.5"
+    "mongoose":
+    
   }
 }

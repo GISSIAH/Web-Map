@@ -27,8 +27,26 @@ function onEachFeature(feature,layer){
   layer.bindPopup('<h1>'+feature.properties.DIST_NAME+'</h1>');
   
 }
+function styleMe(feature){
+  if (feature.properties.DIS_POPUL < 250000){
+      return 'green';
+  }else if (feature.properties.DIS_POPUL > 250000 && feature.properties.DIS_POPUL < 750000){
+      return 'yellow';
+  }else if (feature.properties.DIS_POPUL > 750000 ){
+      return 'red';
+  }
+}
+	
+	
 $.getJSON('../mw.geojson',(data)=>{
   var mw = L.geoJSON(data,{
+	  style:(feature)=>{
+      return {
+        weight:2,
+        color:'white',
+        fillColor: styleMe(feature)
+      };
+    },
     onEachFeature:onEachFeature
   }).addTo(map);
 

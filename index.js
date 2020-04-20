@@ -14,7 +14,6 @@ var map = L.map('map').setView([-13.56,34.334], 10);
 L.Icon.Default.imagePath = '../images/';
 
 L.control.scale().addTo(map);
-L.control.scale().addTo(map);
 
 
 
